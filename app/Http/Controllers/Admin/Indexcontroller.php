@@ -5,15 +5,12 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class Indexcontroller extends Controller
+class IndexController extends Controller
 {
-   public function index(){
-
-//
-   }
-   public function create(){
-       return view('index.index');
-   }
-
-
+    public function index(){
+        return view('admin.index');
+    }
+    public function index_v1(){
+        return view('admin.index_v1 ');
+    }
 }
